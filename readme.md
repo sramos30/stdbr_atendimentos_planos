@@ -14,6 +14,15 @@ git remote add origin git@github.com:sramos30/stdbr_atendimentos_planos.git
 git branch -M master
 git push -u origin master
 
+# To delete a branch
+
+# For a safe deletion (only if the branch has been merged into your current branch):
+> git branch -d <branch-name>
+
+# To force deletion (if the branch has unmerged changes you are sure you want to discard):
+> git branch -D <branch-name>
+
+
 # creating a branch to store planos from 1 to 5099
 # Ensure your local main branch is up to date with the remote repository's changes by running:
 
@@ -21,9 +30,9 @@ git push -u origin master
 
 # create and switch to a new branch
 
-> git git checkout -b planos_1-50__
+> git git checkout -b planos_1
 
 # After making changes and committing them locally, push the new branch to the remote GitHub repository 
 
-> git push -u origin planos_1-50__
- 
+> git push -u origin planos_1
+
