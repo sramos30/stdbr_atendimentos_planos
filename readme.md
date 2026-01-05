@@ -36,4 +36,11 @@ git push -u origin master
 
 > git push -u origin planos_1
 
+# create and switch to a new branch to store planos from 3800 to 4199
+
+> git checkout -b planos_2
+
+# After making changes and committing them locally, push the new branch to the remote GitHub repository 
+
+> git push -u origin planos_2
 
