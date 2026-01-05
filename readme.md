@@ -28,19 +28,32 @@ git push -u origin master
 
 > git checkout master && git pull origin master
 
-# create and switch to a new branch
-
-> git checkout -b planos_1 to store planos from 1 to 3799
+# create and switch to a new branch to store planos from 1 to 3799
+> git checkout -b planos_1 
 
 # After making changes and committing them locally, push the new branch to the remote GitHub repository 
-
 > git push -u origin planos_1
 
 # create and switch to a new branch to store planos from 3800 to 4199
-
 > git checkout -b planos_2
 
 # After making changes and committing them locally, push the new branch to the remote GitHub repository 
-
 > git push -u origin planos_2
 
+# create and switch to a new branch to store planos from 4200 to 4499
+> git checkout -b planos_3
+
+# After making changes and committing them locally, push the new branch to the remote GitHub repository 
+> git push -u origin planos_3
+
+# create and switch to a new branch to store planos from 4500 to 4999
+> git checkout -b planos_4
+
+# After making changes and committing them locally, push the new branch to the remote GitHub repository 
+> git push -u origin planos_4
+
+# create and switch to a new branch to store planos from 5000 to 5399
+> git checkout -b planos_5
+
+# After making changes and committing them locally, push the new branch to the remote GitHub repository 
+> git push -u origin planos_5
