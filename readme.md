@@ -23,24 +23,17 @@ git push -u origin master
 > git branch -D <branch-name>
 
 
-# creating a branch to store planos from 1 to 3799
+# creating a branch 
 # Ensure your local main branch is up to date with the remote repository's changes by running:
 
 > git checkout master && git pull origin master
 
 # create and switch to a new branch
 
-> git checkout -b planos_1
+> git checkout -b planos_1 to store planos from 1 to 3799
 
 # After making changes and committing them locally, push the new branch to the remote GitHub repository 
 
 > git push -u origin planos_1
 
-# create and switch to a new branch to store planos from 3800 to 5099
-
-> git checkout -b planos_2
-
-# After making changes and committing them locally, push the new branch to the remote GitHub repository 
-
-> git push -u origin planos_2
 
