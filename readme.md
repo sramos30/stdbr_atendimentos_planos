@@ -14,3 +14,16 @@ git remote add origin git@github.com:sramos30/stdbr_atendimentos_planos.git
 git branch -M master
 git push -u origin master
 
+# creating a branch to store planos from 1 to 5099
+# Ensure your local main branch is up to date with the remote repository's changes by running:
+
+> git checkout master && git pull origin master
+
+# create and switch to a new branch
+
+> git git checkout -b planos_1-50__
+
+# After making changes and committing them locally, push the new branch to the remote GitHub repository 
+
+> git push -u origin planos_1-50__
+ 
