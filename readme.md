@@ -30,9 +30,10 @@ git push -u origin master
 
 # create and switch to a new branch
 
-> git git checkout -b planos_1
+> git checkout -b planos_1
 
 # After making changes and committing them locally, push the new branch to the remote GitHub repository 
 
 > git push -u origin planos_1
+
 
