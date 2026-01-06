@@ -56,3 +56,11 @@ git push -u origin master
 # create and switch to a new branch to store planos from 5400 to 9999
 > git checkout -b planos_6
 > git push -u origin planos_6
+
+
+
+# to remove duplicated files in last planos
+rm plano_de_carga51??.* && rm plano_de_carga52??.* && rm plano_de_carga53??.*
+
+
+
