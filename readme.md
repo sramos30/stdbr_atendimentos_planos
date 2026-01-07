@@ -57,10 +57,10 @@ git push -u origin master
 > git checkout -b planos_6
 > git push -u origin planos_6
 
+# Create the Multi-Volume Archive to store planos in parts of 50M
+tar -cvfz planos_N.tgz planos_1/
+split --bytes=50M planos_N.tgz "planos_N.tgz_"
 
-
-# to remove duplicated files in last planos
-rm plano_de_carga51??.* && rm plano_de_carga52??.* && rm plano_de_carga53??.*
-
-
+# Combine and Extract the Archive 
+cat planos_N.tgz_* > planos_N.tgz
 
