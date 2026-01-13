@@ -64,3 +64,4 @@ split --bytes=50M planos_N.tgz "planos_N.tgz_"
 # Combine and Extract the Archive 
 cat planos_N.tgz_* > planos_N.tgz
 
+rsync -Hhvar --exclude=plano_de_carga41??.* --exclude=plano_de_carga42??.* --exclude=plano_de_carga43??.* ./planos/ ./planos_6/
