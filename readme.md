@@ -1,4 +1,6 @@
-# git clone git@github.com:sramos30/stdbr_atendimentos_planos.git
+# branch planos_5
+
+git clone --single-branch --branch planos_5 git@github.com:sramos30/stdbr_atendimentos_planos.git .
 
 git remote add origin git@github.com:sramos30/stdbr_atendimentos_planos.git
 
