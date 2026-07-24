@@ -1,1 +1,2 @@
-rm plano_de_carga?.* && rm plano_de_carga??.* && rm plano_de_carga???.* && rm plano_de_carga1???.* && rm plano_de_carga2???.* && rm plano_de_carga3???.* && rm plano_de_carga4???.* && rm plano_de_carga50??.* && rm plano_de_carga51??.* && rm plano_de_carga52??.* && rm plano_de_carga53??.*
+rm plano_de_carga?.* && rm plano_de_carga??.* && rm plano_de_carga???.* && rm plano_de_carga1???.* && rm plano_de_carga2???.* && rm plano_de_carga3???.* && rm plano_de_carga4???.* && rm plano_de_carga50??.* 
+rm plano_de_carga51??.* && rm plano_de_carga52??.* && rm plano_de_carga53??.*
