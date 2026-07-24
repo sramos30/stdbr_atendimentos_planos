@@ -1,11 +1,11 @@
 # git clone git@github.com:sramos30/stdbr_atendimentos_planos.git
 
 git clone --single-branch --branch planos_6 git@github.com:sramos30/stdbr_atendimentos_planos.git .
-
 git remote add origin git@github.com:sramos30/stdbr_atendimentos_planos.git
 
+
 -- rsync -hvar --delete --force --exclude=.git ./planos/ ../phpMsqlPhpadminDocker/www/atendimentos/planos/
-python ./hlCopyPlanosDev.py -s ./planos/ -d ../phpMsqlPhpadminDocker/www/atendimentos/planos/
+python ./hlCopyPlanosDev.py -s ./planos_6/ -d ../phpMsqlPhpadminDocker_stdbrz/www/atendimentos/planos/
 
 sudo chown -R www-data:www-data ../phpMsqlPhpadminDocker/www/atendimentos/planos/
 
@@ -56,12 +56,3 @@ git push -u origin master
 # create and switch to a new branch to store planos from 5400 to 9999
 > git checkout -b planos_6
 > git push -u origin planos_6
-
-# Create the Multi-Volume Archive to store planos in parts of 50M
-tar -cvfz planos_N.tgz planos_1/
-split --bytes=50M planos_N.tgz "planos_N.tgz_"
-
-# Combine and Extract the Archive 
-cat planos_N.tgz_* > planos_N.tgz
-
-rsync -Hhvar --exclude=plano_de_carga41??.* --exclude=plano_de_carga42??.* --exclude=plano_de_carga43??.* ./planos/ ./planos_6/

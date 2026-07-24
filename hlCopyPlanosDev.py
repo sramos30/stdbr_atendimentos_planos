@@ -192,8 +192,10 @@ if __name__ == '__main__':
   dictParms = {}
   dictParms['l'] = True
   dictParms['w'] = True
-  dictParms['s'] = os.path.abspath("./planos")
-  dictParms['d'] = os.path.abspath("../phpMsqlPhpadminDocker/www/atendimentos/planos")
+  # dictParms['s'] = os.path.abspath("./planos")
+  # dictParms['d'] = os.path.abspath("../phpMsqlPhpadminDocker/www/atendimentos/planos")
+  dictParms['s'] = os.path.abspath("./planos_6")
+  dictParms['d'] = os.path.abspath("../phpMsqlPhpadminDocker_stdbrz/www/atendimentos/planos")
   
   # os.path.abspath("../atendimentos/planos")
 
