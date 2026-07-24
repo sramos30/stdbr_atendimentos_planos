@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+# python3 hlCopyPlanosDev.py -s planos_6
+
 import os, sys, stat, signal, re, fnmatch
 import glob, itertools, json, hashlib, codecs
 from os import listdir
@@ -200,8 +202,7 @@ if __name__ == '__main__':
   dictParms['id'] = []
   dictParms['xf'] = []
   dictParms['xd'] = []
-  dictParms['ST_DEV'] = getFileInfo(dictParms['s'])['ST_DEV']
-
+  
   if len(sys.argv) > 1:
 
     for i in range(len(sys.argv)-1):
@@ -245,6 +246,8 @@ if __name__ == '__main__':
         elif waitingVlr in ['if', 'id', 'xf', 'xd']:
           dictParms[waitingVlr].append(arg)
   
+  dictParms['ST_DEV'] = getFileInfo(dictParms['s'])['ST_DEV']
+
   if len(dictParms['s']) == 0 or (dictParms['w'] == True and len(dictParms['d']) == 0) or len(msg) > 0: 
     
     if len(msg) > 0:
